@@ -5,3 +5,15 @@
     text-align: center;
     min-height: 100vh;
 }
+
+.centered {
+    display: flex;
+}
+
+#name {
+    font-size: xxx-large;
+}
+
+.btn {
+    margin-left: 30px;
+}
