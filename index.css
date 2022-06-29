@@ -1,17 +1,37 @@
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+}
+
 .page {
     display: flex;
+    align-self: center;
+    justify-self: center;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .centered {
+    padding: 24px;
     display: flex;
 }
 
 #name {
     font-size: xxx-large;
+    overflow-wrap: break-word;
+    hyphens: manual;
 }
 
 .btn {

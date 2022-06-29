@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <base href="/rusname/"/>
-    <meta charset="UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
     <title></title>
     <meta name="fragment" content="!"/>
     <meta name="description" content="todo">
@@ -18,12 +18,12 @@
         <div class="name" id="name">
             Hello there!
         </div>
-        <button onclick="document.getElementById('name').textContent = generate()" class="btn" id="run">Пуск</button>
+        <button onclick="document.getElementById('name').innerHTML = generate()" class="btn" id="run">Пуск</button>
     </div>
 </div>
 <script>
     let name = document.getElementById("name")
-    name.textContent = generate()
+    name.innerHTML = generate()
 </script>
 </body>
 </html>

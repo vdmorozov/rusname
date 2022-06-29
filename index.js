@@ -190,7 +190,7 @@ function generate() {
 
     let innersPrepared = ""
     inners.forEach(function (inner) {
-        innersPrepared += capitalize(inner)
+        innersPrepared += capitalize(inner + `\&shy;`)
     })
 
     let suffix
@@ -198,7 +198,7 @@ function generate() {
         suffix = rand(suffixes)
     } while (inners.includes(suffix));
 
-    return capitalize(prefix) + innersPrepared + capitalize(suffix)
+    return (capitalize(prefix + `\&shy;`) + innersPrepared + capitalize(suffix));
 }
 
 function rand(list) {
